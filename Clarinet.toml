@@ -1,12 +1,22 @@
 [project]
 name = "ProductivitySuite"
-description = ""
+description = "A productivity suite for task management and time tracking"
 authors = []
 telemetry = true
 cache_dir = "./.cache"
 
-# [contracts.counter]
-# path = "contracts/counter.clar"
+[contracts.task-management]
+path = "contracts/task-management.clar"
+
+[contracts.time-tracker]
+path = "contracts/time-tracker.clar"
+
+[contracts.note-taker]
+path = "contracts/note-taker.clar"
+
+clarity_version = 2
+epoch = 2.4
+
 
 [repl.analysis]
 passes = ["check_checker"]
